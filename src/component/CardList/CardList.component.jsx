@@ -2,15 +2,15 @@ import React from "react";
 import Card from "../Card/Card.component";
 import "./CardList.styles.scss";
 
-function CardList({ monsters }) {
+function CardList({ kittens }) {
   return (
     <div className='card-list'>
-      {monsters.map(monster => (
+      {kittens.map(kitten => (
         <Card
-          name={monster.name}
-          email={monster.email}
-          id={monster.id}
-          key={monster.id}
+          name={kitten.name}
+          email={kitten.email}
+          id={kitten.id}
+          key={kitten.id}
         />
       ))}
     </div>
