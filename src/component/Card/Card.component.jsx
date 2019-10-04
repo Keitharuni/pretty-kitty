@@ -5,7 +5,7 @@ function Card({ name, email, id }) {
   return (
     <div className='card-container'>
       <img
-        alt='monster'
+        alt='Kitten'
         src={`https://robohash.org/${id}?set=set4&size=180x180`}
       />
       <h2>{name}</h2>
