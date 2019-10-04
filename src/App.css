@@ -3,7 +3,8 @@
 }
 
 h1 {
-  font-family: "Bigelow Rules";
+  font-family: "Cabin Sketch", cursive;
   font-size: 72px;
-  color: #0ccac4;
+  font-weight: 100;
+  color: white;
 }

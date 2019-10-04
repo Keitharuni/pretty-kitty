@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import CardList from "./CardList";
+import CardList from "./component/CardList/CardList.component";
 import "./App.css";
 import { SearchBox } from "./hooks/SearchBox";
 
 function App() {
   const [monsters, setMonsters] = useState([
-    { name: "Keith", email: "keith@aol.com", id: 1 },
-    { name: "Kelley", email: "kelley@aol.com", id: 2 },
-    { name: "Kevin", email: "kevin@aol.com", id: 3 },
-    { name: "Sam", email: "sam@aol.com", id: 4 },
-    { name: "Sean", email: "sean@aol.com", id: 5 }
+    { name: "Keith Blackmon", email: "keith@aol.com", id: 1 },
+    { name: "Kelley Smellbottom", email: "kelley@aol.com", id: 2 },
+    { name: "Kevin Market", email: "kevin@aol.com", id: 3 },
+    { name: "Sam Wells", email: "sam@aol.com", id: 4 },
+    { name: "Sean Theman", email: "sean@aol.com", id: 5 }
   ]);
   const [searchField, setSearchField] = useState("");
 
@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Monsters Rolodex</h1>
+      <h1>Pretty Kitty</h1>
       <SearchBox
-        placeholder='Search Monsters'
+        placeholder='Search Kittens'
         handleChange={e => setSearchField(e.target.value)}
       />
       <CardList monsters={filteredMonsters} />

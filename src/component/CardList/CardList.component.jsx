@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Card";
-import "./CardList.css";
+import Card from "../Card/Card.component";
+import "./CardList.styles.scss";
 
 function CardList({ monsters }) {
   return (
